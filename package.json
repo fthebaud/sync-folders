@@ -1,20 +1,28 @@
 {
-  "name": "sync-folders",
-  "version": "1.0.0",
-  "description": "a simple tool which keeps directories in sync using grunt watch and grunt sync",
-  "keywords": [
-    "grunt",
-    "watch",
-    "copy"
-  ],
-  "author": "fthebaud@gmail.com",
-  "license": "MIT",
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sync": "^0.5.2"
-  },
-  "scripts": {
-    "keepInSync": "grunt"
-  }
+    "name": "sync-folders",
+    "version": "1.0.0",
+    "description": "a simple tool which keeps directories in sync using grunt watch and grunt sync",
+    "keywords": [
+        "grunt",
+        "watch",
+        "sync"
+    ],
+    "author": "Fabien Thebaud",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fthebaud/sync-folders.git"
+    },
+    "bugs": {
+        "url": "https://github.com/fthebaud/sync-folders/issues"
+    },
+    "homepage": "https://github.com/fthebaud/sync-folders#readme",
+    "license": "MIT",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-sync": "^0.5.2"
+    },
+    "scripts": {
+        "keepInSync": "grunt"
+    }
 }
