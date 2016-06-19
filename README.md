@@ -1,0 +1,2 @@
+usage
+npm run keepinSync
