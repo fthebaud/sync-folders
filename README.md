@@ -5,9 +5,13 @@ Keep two folders synchronized. The destination folder is updated when a change i
 Edit gruntfile.js
 ```js
 files: {
-  origin: 'D:/workspace/project01/src/',
+  //root commun à l'origine et la destination
+  root: 'D:/workspace/project01/'
+  //source
+  origin: 'src/',
   pattern: '**/*',
-  destination: 'D:/workspace/project01/target/'
+  //destination
+  destination: 'target/'
 }
 ```
 
