@@ -5,22 +5,22 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     files: {
-      root: 'D:/workspace/project01/',
-      origin: 'src/**/*',
-      destination: 'target/'
+      origin: 'D:/workspaces/eclipse4.5-mars/maint-15.3.x/contextePartage/specificSillage/PS/',
+      pattern: '**/*',
+      destination: 'D:/workspaces/eclipse4.5-mars/maint-15.3.x/contextePartage/target/m2e-wtp/web-resources/PS/'
     },
     watch: {
-      files: '<%= files.root %>' + '<%= files.origin %>',
+      files: '<%= files.origin %>' + '<%= files.pattern %>',
       tasks: ['sync']
     },
     sync: {
       main: {
         files: [{
-          cwd: '<%= files.root %>',
-          src: '<%= files.origin %>',
-          dest: 'target/m2e-wtp/web-resources/PS/',
+          cwd: '<%= files.origin %>',
+          src: '<%= files.pattern %>',
+          dest: '<%= files.destination %>'
         }],
-        //pretend: true,
+        // pretend: true,
         verbose: true
       }
     }
