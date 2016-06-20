@@ -5,29 +5,27 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     files: {
-      origin: 'test/**/*',
-      destination: 'dest/'
+      root: 'D:/workspace/project01/',
+      origin: 'src/**/*',
+      destination: 'target/'
     },
     watch: {
-      files: '<%= files.origin %>',
-      tasks: ['copy']
+      files: '<%= files.root %>' + '<%= files.origin %>',
+      tasks: ['sync']
     },
-    // copy: {
-    //   expand: true,
-    //   // src: '<%= files.origin %>',
-    //   // dest: '<%= files.destination %>'
-    // }
+    sync: {
+      main: {
+        files: [{
+          cwd: '<%= files.root %>',
+          src: '<%= files.origin %>',
+          dest: 'target/m2e-wtp/web-resources/PS/',
+        }],
+        //pretend: true,
+        verbose: true
+      }
+    }
   });
 
   grunt.registerTask('default', ['watch']);
-
-  // grunt.event.on('watch', function(action, filepath, target) {
-  //   grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
-  // var cfgkey = ['copy', 'devTmpl', 'files'];
-  // grunt.config.set(cfgkey, grunt.config.get(cfgkey).map(function(file) {
-  //   file.src = filepath;
-  //   return file;
-  // }));
-  // });
 
 };
