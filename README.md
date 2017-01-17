@@ -1,5 +1,7 @@
 # Sync Folders
-Keep two folders synchronized. The destination folder is updated when a change is detected on the origin folder.
+Keep two folders synchronized:
+
+Whenever a change is detected on the origin folder, the destination folder is updated with the new changes.
 
 ## Configuration
 Edit gruntfile.js
@@ -17,5 +19,5 @@ files: {
 
 ## Usage
 ```sh
-npm run keepInSync
+npm run
 ```

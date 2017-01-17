@@ -1,4 +1,2 @@
 node_modules/
-dest/
 npm-debug.log
-target/

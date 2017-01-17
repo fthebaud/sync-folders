@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     files: {
       //root commun à l'origine et la destination
-      root: 'D:/workspaces/eclipse4.5-mars/maint-15.3.x/contextePartage/',
+      root: 'D:/workspaces/eclipse4.6-neon/15.x/contextePartage/',
       //source
       origin: 'specificSillage/PS/',
       pattern: '**/*',
